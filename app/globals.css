@@ -1,0 +1,119 @@
+@import "./tokens.css";
+
+/* ============================================
+   Global Styles
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-ink-light);
+  background-color: var(--color-ground);
+}
+
+/* --- Typography --- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  color: var(--color-ink);
+  font-weight: 400;
+  line-height: var(--leading-tight);
+}
+
+p {
+  max-width: var(--max-width-prose);
+}
+
+a {
+  color: var(--color-accent-deep);
+  text-decoration: none;
+  transition: color var(--duration-sm) var(--ease-out);
+}
+
+a:hover {
+  color: var(--color-ink);
+}
+
+/* --- Selection --- */
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* --- Scrollbar --- */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-stone);
+  border-radius: 3px;
+}
+
+/* --- Restrained Motion --- */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-animate] {
+    animation: fadeUp var(--duration-lg) var(--ease-out) both;
+  }
+
+  [data-animate="1"] { animation-delay: 100ms; }
+  [data-animate="2"] { animation-delay: 250ms; }
+  [data-animate="3"] { animation-delay: 400ms; }
+  [data-animate="4"] { animation-delay: 550ms; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    animation: none;
+  }
+}
+
+/* --- Utility --- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

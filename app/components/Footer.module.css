@@ -1,0 +1,33 @@
+.footer {
+  border-top: var(--border-hair);
+  padding: var(--space-8) var(--space-6) var(--space-7);
+  background-color: var(--color-ground-deep);
+}
+
+.inner {
+  max-width: var(--max-width-page);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mark {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: var(--text-lg);
+  font-weight: 400;
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-ink);
+  margin-bottom: var(--space-3);
+}
+
+.line {
+  font-size: var(--text-sm);
+  color: var(--color-earth);
+  margin: 0 auto var(--space-5);
+  letter-spacing: var(--tracking-wide);
+}
+
+.copyright {
+  font-size: var(--text-xs);
+  color: var(--color-wood);
+  letter-spacing: var(--tracking-wide);
+}
