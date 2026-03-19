@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <div className={styles.mark}>u-Kama</div>
-        <p className={styles.line}>
-          Ecological economic architecture.
-        </p>
-        <p className={styles.copyright}>
-          &copy; {new Date().getFullYear()} u-Kama. All rights reserved.
-        </p>
+        <span className={styles.mark}>u-Kama</span>
+        <span className={styles.line}>
+          Ecological economic architecture
+        </span>
+        <span className={styles.copyright}>
+          &copy; {new Date().getFullYear()}
+        </span>
       </div>
     </footer>
   );

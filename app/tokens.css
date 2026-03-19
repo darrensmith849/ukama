@@ -1,26 +1,28 @@
 /* ============================================
    u-Kama Design Tokens
 
-   Palette: limestone, clay, charcoal, oxidized bronze
+   Palette: warm limestone, clay, deep earth, oxidized bronze
    Rhythm: layered, concentric, architectural
    Feeling: restrained, monumental, ecological
    ============================================ */
 
 :root {
   /* --- Color --- */
-  --color-ground:       #f0ebe2;      /* warm limestone */
-  --color-ground-deep:  #e4ddd0;      /* deeper clay wash */
-  --color-ground-dark:  #2a2520;      /* dark earth ground for contrast sections */
-  --color-stone:        #c4b9a8;      /* weathered stone */
-  --color-wood:         #7d6f5c;      /* aged timber */
-  --color-earth:        #564d42;      /* deep umber */
-  --color-ink:          #1e1b17;      /* true charcoal */
-  --color-ink-light:    #3d3730;      /* warm dark for body */
-  --color-accent:       #7a6e4e;      /* oxidized bronze */
-  --color-accent-deep:  #5c5236;      /* deep bronze / patina */
-  --color-warm:         #b09a78;      /* aged brass */
-  --color-white:        #f7f4ee;      /* bone white */
-  --color-rule:         #b5a894;      /* architectural rule / divider */
+  --color-ground:       #f3eee5;      /* warm limestone — luminous base */
+  --color-ground-deep:  #eae3d6;      /* clay wash — tonal step */
+  --color-ground-dark:  #332b23;      /* warm deep earth — intentional contrast */
+  --color-surface:      #ede7dc;      /* inset surface for frames */
+  --color-stone:        #c7bca9;      /* weathered sandstone */
+  --color-wood:         #8a7a64;      /* aged timber */
+  --color-earth:        #5d5347;      /* deep umber */
+  --color-ink:          #2a2420;      /* warm charcoal */
+  --color-ink-light:    #4a423a;      /* warm body text */
+  --color-accent:       #8f7a4e;      /* oxidized bronze — signature */
+  --color-accent-deep:  #6e5c3b;      /* deep bronze patina */
+  --color-accent-light: #a6935f;      /* lighter bronze for dark backgrounds */
+  --color-warm:         #bda57c;      /* aged brass */
+  --color-white:        #f9f6f0;      /* bone white */
+  --color-rule:         #cfc3b0;      /* architectural divider */
 
   /* --- Typography Scale --- */
   --text-xs:    0.75rem;
@@ -32,6 +34,7 @@
   --text-2xl:   2.369rem;
   --text-3xl:   3.157rem;
   --text-4xl:   4.209rem;
+  --text-5xl:   5rem;
 
   /* --- Line Heights --- */
   --leading-tight:    1.15;
@@ -59,9 +62,9 @@
   --space-10:  13rem;
 
   /* --- Layout --- */
-  --max-width-prose:    40rem;
-  --max-width-content:  52rem;
-  --max-width-wide:     72rem;
+  --max-width-prose:    38rem;
+  --max-width-content:  50rem;
+  --max-width-wide:     68rem;
   --max-width-page:     84rem;
 
   /* --- Transitions --- */
@@ -72,22 +75,30 @@
 
   /* --- Borders --- */
   --border-fine:  1px solid var(--color-rule);
+
+  /* --- Shadows --- */
+  --shadow-inset: inset 0 1px 3px rgba(42, 36, 32, 0.06);
+  --shadow-soft:  0 1px 4px rgba(42, 36, 32, 0.05), 0 4px 16px rgba(42, 36, 32, 0.03);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-ground:       #181614;
-    --color-ground-deep:  #121110;
-    --color-ground-dark:  #0d0c0b;
-    --color-stone:        #332e28;
-    --color-wood:         #7a6e5e;
+    --color-ground:       #1a1816;
+    --color-ground-deep:  #141311;
+    --color-ground-dark:  #0e0d0c;
+    --color-surface:      #1e1c19;
+    --color-stone:        #362f28;
+    --color-wood:         #7e7060;
     --color-earth:        #a89c8e;
     --color-ink:          #ede8df;
     --color-ink-light:    #c4bdb0;
-    --color-accent:       #b09a6e;
-    --color-accent-deep:  #8a7a56;
+    --color-accent:       #b8a06a;
+    --color-accent-deep:  #917d52;
+    --color-accent-light: #c8b07a;
     --color-warm:         #c4a882;
     --color-white:        #1e1c19;
     --color-rule:         #3d372e;
+    --shadow-inset: inset 0 1px 3px rgba(0, 0, 0, 0.15);
+    --shadow-soft:  0 1px 4px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.06);
   }
 }
