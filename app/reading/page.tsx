@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
@@ -29,6 +30,15 @@ export default function Reading() {
           </p>
         </div>
       </header>
+      <div className={styles.headerImage}>
+        <Image
+          src="/images/layers.jpg"
+          alt="Tiered ecological knowledge architecture"
+          width={900}
+          height={1350}
+          className={styles.headerImg}
+        />
+      </div>
 
       {/* ---- Content ---- */}
       <div className={styles.content}>

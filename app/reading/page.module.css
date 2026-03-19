@@ -44,6 +44,23 @@
   max-width: var(--max-width-prose);
 }
 
+/* --- Header Image --- */
+
+.headerImage {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-6) var(--space-6) var(--space-7);
+  background-color: var(--color-ground-deep);
+  border-bottom: var(--border-hair);
+}
+
+.headerImg {
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
+  display: block;
+}
+
 /* --- Content Sections --- */
 
 .content {
