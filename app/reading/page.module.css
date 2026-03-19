@@ -77,6 +77,16 @@
   line-height: var(--leading-snug);
 }
 
+.subheading {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--color-ink);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+  line-height: var(--leading-snug);
+}
+
 .prose {
   max-width: var(--max-width-prose);
 }
