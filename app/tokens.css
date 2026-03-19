@@ -1,36 +1,37 @@
 /* ============================================
    u-Kama Design Tokens
 
-   Palette: warm parchment, stone, wood, archive
+   Palette: limestone, clay, charcoal, oxidized bronze
    Rhythm: layered, concentric, architectural
    Feeling: restrained, monumental, ecological
    ============================================ */
 
 :root {
   /* --- Color --- */
-  --color-ground:       #f5f0e8;      /* warm parchment base */
-  --color-ground-deep:  #ece5d8;      /* deeper parchment */
-  --color-stone:        #d4cbbf;      /* stone / divider */
-  --color-wood:         #8b7d6b;      /* muted wood */
-  --color-earth:        #5c5347;      /* earth / secondary text */
-  --color-ink:          #2c2821;      /* near-black ink */
-  --color-ink-light:    #4a4439;      /* lighter ink for body */
-  --color-accent:       #6b7c5e;      /* muted ecological green */
-  --color-accent-deep:  #4d5c42;      /* deeper green for emphasis */
-  --color-warm:         #a89279;      /* warm highlight / archive gold */
-  --color-white:        #faf8f4;      /* off-white for cards */
+  --color-ground:       #f0ebe2;      /* warm limestone */
+  --color-ground-deep:  #e4ddd0;      /* deeper clay wash */
+  --color-ground-dark:  #2a2520;      /* dark earth ground for contrast sections */
+  --color-stone:        #c4b9a8;      /* weathered stone */
+  --color-wood:         #7d6f5c;      /* aged timber */
+  --color-earth:        #564d42;      /* deep umber */
+  --color-ink:          #1e1b17;      /* true charcoal */
+  --color-ink-light:    #3d3730;      /* warm dark for body */
+  --color-accent:       #7a6e4e;      /* oxidized bronze */
+  --color-accent-deep:  #5c5236;      /* deep bronze / patina */
+  --color-warm:         #b09a78;      /* aged brass */
+  --color-white:        #f7f4ee;      /* bone white */
+  --color-rule:         #b5a894;      /* architectural rule / divider */
 
   /* --- Typography Scale --- */
-  /* Based on 1.333 (perfect fourth) ratio */
-  --text-xs:    0.75rem;     /* 12px */
-  --text-sm:    0.875rem;    /* 14px */
-  --text-base:  1rem;        /* 16px */
-  --text-md:    1.125rem;    /* 18px */
-  --text-lg:    1.333rem;    /* ~21px */
-  --text-xl:    1.777rem;    /* ~28px */
-  --text-2xl:   2.369rem;    /* ~38px */
-  --text-3xl:   3.157rem;    /* ~50px */
-  --text-4xl:   4.209rem;    /* ~67px */
+  --text-xs:    0.75rem;
+  --text-sm:    0.875rem;
+  --text-base:  1rem;
+  --text-md:    1.125rem;
+  --text-lg:    1.333rem;
+  --text-xl:    1.777rem;
+  --text-2xl:   2.369rem;
+  --text-3xl:   3.157rem;
+  --text-4xl:   4.209rem;
 
   /* --- Line Heights --- */
   --leading-tight:    1.15;
@@ -46,23 +47,22 @@
   --tracking-widest:  0.2em;
 
   /* --- Spacing Scale --- */
-  /* Fibonacci-influenced for organic rhythm */
-  --space-1:   0.25rem;   /* 4px */
-  --space-2:   0.5rem;    /* 8px */
-  --space-3:   0.75rem;   /* 12px */
-  --space-4:   1rem;      /* 16px */
-  --space-5:   1.5rem;    /* 24px */
-  --space-6:   2rem;      /* 32px */
-  --space-7:   3rem;      /* 48px */
-  --space-8:   5rem;      /* 80px */
-  --space-9:   8rem;      /* 128px */
-  --space-10:  13rem;     /* 208px */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.5rem;
+  --space-6:   2rem;
+  --space-7:   3rem;
+  --space-8:   5rem;
+  --space-9:   8rem;
+  --space-10:  13rem;
 
   /* --- Layout --- */
-  --max-width-prose:    40rem;     /* ~640px - reading line */
-  --max-width-content:  52rem;     /* ~832px - content area */
-  --max-width-wide:     72rem;     /* ~1152px - wide layout */
-  --max-width-page:     84rem;     /* ~1344px - page max */
+  --max-width-prose:    40rem;
+  --max-width-content:  52rem;
+  --max-width-wide:     72rem;
+  --max-width-page:     84rem;
 
   /* --- Transitions --- */
   --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
@@ -71,22 +71,23 @@
   --duration-lg: 800ms;
 
   /* --- Borders --- */
-  --border-hair:  1px solid var(--color-stone);
-  --border-fine:  1px solid var(--color-wood);
+  --border-fine:  1px solid var(--color-rule);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-ground:       #1a1916;
-    --color-ground-deep:  #13120f;
-    --color-stone:        #2e2b26;
+    --color-ground:       #181614;
+    --color-ground-deep:  #121110;
+    --color-ground-dark:  #0d0c0b;
+    --color-stone:        #332e28;
     --color-wood:         #7a6e5e;
     --color-earth:        #a89c8e;
-    --color-ink:          #e8e2d8;
+    --color-ink:          #ede8df;
     --color-ink-light:    #c4bdb0;
-    --color-accent:       #8a9e7a;
-    --color-accent-deep:  #6b7c5e;
+    --color-accent:       #b09a6e;
+    --color-accent-deep:  #8a7a56;
     --color-warm:         #c4a882;
-    --color-white:        #201e1a;
+    --color-white:        #1e1c19;
+    --color-rule:         #3d372e;
   }
 }

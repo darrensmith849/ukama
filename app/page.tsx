@@ -30,54 +30,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---- Tower Image ---- */}
-      <div className={styles.imageBreak}>
-        <Image
-          src="/images/tower.jpg"
-          alt="Layered stone structure within an ecological landscape"
-          width={800}
-          height={1200}
-          className={styles.towerImage}
-          priority
-        />
-      </div>
-
-      {/* ---- The Problem ---- */}
-      <section className={styles.section}>
-        <div className={styles.sectionInner}>
-          <h2 className={styles.sectionTitle}>
-            The coordination problem
-          </h2>
-          <div className={styles.sectionBody}>
-            <p>
-              Modern monetary systems cannot coordinate ecological protection.
-              Once value is created, nothing requires the ecological conditions
-              that justified it to persist. Time cycles disconnect from
-              ecological time. Value is extracted in one place and its
-              consequences externalised to another.
-            </p>
-            <p>
-              u-Kama does not attempt to repair this from within the existing
-              paradigm. It reverses the foundational relationship. Three
-              principles are locked at the base:
-            </p>
+      {/* ---- The Problem (split with tower image) ---- */}
+      <section className={styles.splitSection}>
+        <div className={styles.splitInner}>
+          <div className={styles.splitText}>
+            <h2 className={styles.sectionTitle}>
+              The coordination problem
+            </h2>
+            <div className={styles.sectionBody}>
+              <p>
+                Modern monetary systems cannot coordinate ecological protection.
+                Once value is created, nothing requires the ecological conditions
+                that justified it to persist. Time cycles disconnect from
+                ecological time. Value is extracted in one place and its
+                consequences externalised to another.
+              </p>
+              <p>
+                u-Kama does not attempt to repair this from within the existing
+                paradigm. It reverses the foundational relationship. Three
+                principles are locked at the base:
+              </p>
+            </div>
+            <div className={styles.principles}>
+              <div className={styles.principle}>
+                Ecology constrains economics.
+              </div>
+              <div className={styles.principle}>
+                Doctrine constrains finance.
+              </div>
+              <div className={styles.principle}>
+                Failure modes are defined in advance.
+              </div>
+            </div>
           </div>
-          <div className={styles.principles}>
-            <div className={styles.principle}>
-              Ecology constrains economics.
-            </div>
-            <div className={styles.principle}>
-              Doctrine constrains finance.
-            </div>
-            <div className={styles.principle}>
-              Failure modes are defined in advance.
-            </div>
+          <div className={styles.splitImage}>
+            <Image
+              src="/images/tower.jpg"
+              alt="Layered stone structure within an ecological landscape"
+              width={800}
+              height={1200}
+              className={styles.towerImage}
+              priority
+            />
           </div>
         </div>
       </section>
 
       {/* ---- The Inversion / Architecture ---- */}
-      <section className={styles.section}>
+      <section className={styles.architectureSection}>
         <div className={styles.sectionInner}>
           <h2 className={styles.sectionTitle}>
             Constraint at the core. Finance at the margin.
@@ -91,7 +91,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className={styles.architectureImage}>
+        <div className={styles.architectureFrame}>
           <Image
             src="/images/architecture.jpg"
             alt="u-Kama concentric architecture — BDR ecological memory at the core, primary buffer, membrane interface, BIO coordination at the boundary"

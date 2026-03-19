@@ -1,5 +1,5 @@
 .footer {
-  border-top: var(--border-hair);
+  border-top: var(--border-fine);
   padding: var(--space-8) var(--space-6) var(--space-7);
   background-color: var(--color-ground-deep);
 }

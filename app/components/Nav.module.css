@@ -7,7 +7,7 @@
   background-color: color-mix(in srgb, var(--color-ground) 92%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: var(--border-hair);
+  border-bottom: var(--border-fine);
 }
 
 .inner {

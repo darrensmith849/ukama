@@ -55,8 +55,8 @@ a:hover {
 /* --- Selection --- */
 
 ::selection {
-  background-color: var(--color-accent);
-  color: var(--color-white);
+  background-color: var(--color-accent-deep);
+  color: var(--color-ground);
 }
 
 /* --- Scrollbar --- */
