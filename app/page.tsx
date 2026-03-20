@@ -98,16 +98,16 @@ export default function Home() {
             <figure className={styles.heroArtifact} data-animate="4">
               <div className={styles.heroFrame}>
                 <Image
-                  src="/images/tower.jpg"
-                  alt="Tower formation used as a reference artifact for layered ecological structure"
-                  width={820}
-                  height={1180}
+                  src="/images/hero-trias-natura.png"
+                  alt="Trias Natura continuity pyramid showing ecological knowledge, participation, immersive verification, environmental credits, and continuity assurance"
+                  width={1024}
+                  height={1536}
                   priority
                   className={styles.heroImage}
                 />
               </div>
               <figcaption className={styles.heroCaption}>
-                Reference Artifact 01 · Vertical continuity under pressure
+                Reference Artifact 01 · Trias Natura continuity structure
               </figcaption>
             </figure>
           </div>
