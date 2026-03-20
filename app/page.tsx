@@ -230,7 +230,7 @@ export default function Home() {
                 Open Reading
               </Link>
               <Link href="/contact" className={styles.contactAction}>
-                Contact Page
+                Contact
               </Link>
             </div>
           </div>
