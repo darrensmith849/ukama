@@ -1,7 +1,8 @@
 .footer {
   border-top: var(--border-fine);
   padding: var(--space-6) var(--space-6) var(--space-5);
-  background-color: var(--color-ground-deep);
+  background:
+    linear-gradient(180deg, rgba(237, 230, 217, 0.8) 0%, rgba(233, 224, 209, 0.92) 100%);
 }
 
 .inner {
@@ -15,21 +16,22 @@
 .mark {
   font-family: var(--font-serif), Georgia, serif;
   font-size: var(--text-base);
-  font-weight: 400;
-  letter-spacing: var(--tracking-wide);
+  font-weight: 500;
+  letter-spacing: 0.05em;
   color: var(--color-ink);
 }
 
 .line {
   font-size: var(--text-xs);
-  color: var(--color-wood);
-  letter-spacing: var(--tracking-wide);
+  color: var(--color-earth);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .copyright {
   font-size: var(--text-xs);
-  color: var(--color-stone);
-  letter-spacing: var(--tracking-wide);
+  color: var(--color-stone-strong);
+  letter-spacing: 0.08em;
 }
 
 @media (max-width: 640px) {
