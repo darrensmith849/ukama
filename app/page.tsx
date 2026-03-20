@@ -4,60 +4,60 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import styles from "./page.module.css";
 
-const failurePanels = [
+const doctrineFailures = [
   {
-    label: "Post-Issuance Drift",
-    title: "Proof decays after value is minted",
+    code: "F-01",
+    title: "Proof Collapse After Issuance",
     body:
-      "Conventional systems do not preserve living ecological conditions once financial value is created. Verification is episodic, not structural.",
+      "Once value is minted, most systems stop requiring ecological proof continuity.",
+    consequence: "Ecological conditions can decay without financial contraction.",
   },
   {
-    label: "Temporal Misalignment",
-    title: "Monetary time ignores ecological time",
+    code: "F-02",
+    title: "Temporal Misfit",
     body:
-      "Quarterly and speculative cycles dominate decision-making while ecosystems move through stress windows, seasons, and recovery horizons.",
+      "Monetary cycles optimize for quarterly velocity while ecosystems recover on slower stress intervals.",
+    consequence: "Capital outruns living regeneration.",
   },
   {
-    label: "Spatial Externalisation",
-    title: "Extraction and consequence separate",
+    code: "F-03",
+    title: "Spatial Displacement",
     body:
-      "Value can be realised in one jurisdiction while ecological loss is absorbed elsewhere, outside the ledger and outside accountability.",
+      "Extraction can be monetized in one location while ecological cost is externalized somewhere else.",
+    consequence: "Accountability detaches from place.",
   },
 ];
 
-const architectureTiles = [
+const membranePlates = [
   {
-    title: "Ecological Memory Plate",
-    body:
-      "BDR stores irreversible ecological record. It is non-financial and cannot be traded, pledged, or diluted.",
+    title: "Authority Order",
+    body: "Ecology defines boundary conditions. Doctrine governs interpretation. Finance operates at the edge.",
   },
   {
-    title: "Membrane Interface",
-    body:
-      "BIO operates only at the boundary, translating participation into constrained coordination rather than extraction.",
+    title: "Contraction Logic",
+    body: "If witnessing degrades, coordination capacity contracts before core integrity is compromised.",
   },
   {
-    title: "Continuity Frame",
-    body:
-      "Five-day witnessing and seasonal gates preserve temporal discipline, so economic activity cannot outrun ecological truth.",
+    title: "No Inward Authority",
+    body: "External capital can interact at the membrane but cannot alter reserve memory at the core.",
   },
 ];
 
 const witnessBlocks = [
   {
-    title: "Custodians",
-    body:
-      "Hold doctrinal continuity and preserve the non-negotiable clauses. They secure what cannot be politically edited.",
+    role: "Custodians",
+    authority: "Hold doctrinal continuity and canonical boundaries.",
+    limit: "Cannot directly allocate market coordination rights.",
   },
   {
-    title: "Stewards",
-    body:
-      "Maintain operational responsibility for ecological cells and execute decisions within explicit system boundaries.",
+    role: "Stewards",
+    authority: "Operate ecological cells inside doctrinal constraints.",
+    limit: "Cannot redefine witnessing criteria or reserve truth tests.",
   },
   {
-    title: "Witnesses",
-    body:
-      "Attest state independently across classes. No single actor, including AI systems, can self-certify ecological truth.",
+    role: "Witnesses",
+    authority: "Attest ecological state through independent classes.",
+    limit: "Cannot self-verify from a single actor or automated authority.",
   },
 ];
 
@@ -68,220 +68,168 @@ export default function Home() {
 
       <main className={styles.page}>
         <section className={styles.hero}>
-          <div className={styles.heroGrid}>
-            <div className={styles.heroText}>
-              <p className={styles.kicker} data-animate="1">
-                Ecological Economic Architecture
-              </p>
-              <h1 className={styles.heroTitle} data-animate="2">
-                A public system where
-                <br />
-                ecology sets the boundary
-                <br />
-                of value.
-              </h1>
-              <p className={styles.heroLead} data-animate="3">
-                u-Kama is a doctrinal architecture for coordinating economies
-                under living ecological constraint, with memory, witnessing, and
-                boundary logic built into the core.
-              </p>
-              <div className={styles.heroActions} data-animate="4">
-                <Link href="/reading" className={styles.primaryAction}>
-                  Read canonical architecture
-                </Link>
-                <a href="#why-failure" className={styles.secondaryAction}>
-                  Why current systems fail
-                </a>
-              </div>
-            </div>
+          <div className={styles.heroOverlay} />
+          <div className={styles.heroGrain} />
 
-            <figure className={styles.heroArtifact} data-animate="4">
-              <div className={styles.heroFrame}>
-                <Image
-                  src="/images/hero-trias-natura.png"
-                  alt="Trias Natura continuity pyramid showing ecological knowledge, participation, immersive verification, environmental credits, and continuity assurance"
-                  width={1024}
-                  height={1536}
-                  priority
-                  className={styles.heroImage}
-                />
-              </div>
-              <figcaption className={styles.heroCaption}>
-                Reference Artifact 01 · Trias Natura continuity structure
-              </figcaption>
-            </figure>
+          <div className={styles.heroInner}>
+            <p className={styles.heroKicker} data-animate="1">
+              Ecological Economic Architecture
+            </p>
+            <h1 className={styles.heroTitle} data-animate="2">
+              Ecology sets the boundary.
+              <br />
+              Value moves within it.
+            </h1>
+            <p className={styles.heroLead} data-animate="3">
+              u-Kama is a public systems architecture where ecological truth,
+              memory, and witnessing constrain economic participation.
+            </p>
+            <div className={styles.heroActions} data-animate="4">
+              <Link href="/reading" className={styles.primaryAction}>
+                Read Canonical Architecture
+              </Link>
+              <a href="#inversion" className={styles.secondaryAction}>
+                See Core Inversion
+              </a>
+            </div>
+            <p className={styles.heroSignal}>
+              Designed for continuity, not extraction velocity.
+            </p>
           </div>
         </section>
 
-        <section id="why-failure" className={styles.section}>
+        <section className={styles.lightSection}>
           <div className={styles.sectionHead}>
             <p className={styles.kicker}>Why Current Systems Fail</p>
-            <h2 className={styles.sectionTitle}>
-              The failure is structural, not rhetorical.
-            </h2>
+            <h2 className={styles.sectionTitle}>Failure is mechanical, not moral.</h2>
             <p className={styles.sectionLead}>
-              Ecological damage persists because the dominant financial model is
-              not designed to hold proof, time, and place in continuity.
+              The dominant financial stack cannot reliably preserve ecological
+              proof across time, place, and governance transitions.
             </p>
           </div>
 
-          <div className={styles.failureGrid}>
-            {failurePanels.map((panel, index) => (
-              <article className={styles.doctrinePanel} key={panel.title}>
-                <p className={styles.panelIndex}>0{index + 1}</p>
-                <p className={styles.panelLabel}>{panel.label}</p>
-                <h3 className={styles.panelTitle}>{panel.title}</h3>
-                <p className={styles.panelBody}>{panel.body}</p>
+          <div className={styles.doctrineGrid}>
+            {doctrineFailures.map((item) => (
+              <article key={item.code} className={styles.doctrineObject}>
+                <p className={styles.objectCode}>{item.code}</p>
+                <h3 className={styles.objectTitle}>{item.title}</h3>
+                <p className={styles.objectBody}>{item.body}</p>
+                <p className={styles.objectConsequence}>{item.consequence}</p>
               </article>
             ))}
           </div>
 
-          <div className={styles.insightSplit}>
-            <div className={styles.insightBox}>
-              <p className={styles.insightLabel}>Doctrine Insight</p>
-              <p className={styles.insightText}>
-                Once economics is allowed to define ecology, every safeguard
-                eventually becomes optional.
-              </p>
-            </div>
-            <figure className={styles.supportVisual}>
-              <Image
-                src="/images/layers.jpg"
-                alt="Layered ecological terrain demonstrating structural depth"
-                width={720}
-                height={1080}
-                className={styles.supportImage}
-              />
-              <figcaption className={styles.supportCaption}>
-                Layer study · structure before flow
-              </figcaption>
-            </figure>
+          <div className={styles.continuityBox}>
+            <p className={styles.continuityLabel}>Continuity Clause</p>
+            <p className={styles.continuityText}>
+              If proof continuity cannot be maintained, legitimate coordination
+              must contract before ecological state is compromised.
+            </p>
           </div>
         </section>
 
-        <section className={styles.inversionSection}>
-          <div className={styles.inversionInner}>
-            <p className={styles.inversionKicker}>Core Inversion</p>
-            <h2 className={styles.inversionTitle}>
-              u-Kama reverses the order of authority.
+        <section id="inversion" className={styles.darkSection}>
+          <div className={styles.sectionHeadDark}>
+            <p className={styles.kickerDark}>Core Inversion</p>
+            <h2 className={styles.sectionTitleDark}>
+              Constraint at the core.
+              <br />
+              Coordination at the membrane.
             </h2>
-            <div className={styles.inversionList}>
-              <div className={styles.inversionItem}>
-                <p className={styles.inversionName}>1 · Ecology</p>
-                <p className={styles.inversionBody}>
-                  Ecological conditions are primary and non-negotiable.
-                </p>
-              </div>
-              <div className={styles.inversionItem}>
-                <p className={styles.inversionName}>2 · Doctrine</p>
-                <p className={styles.inversionBody}>
-                  Doctrine binds interpretation and defines failure modes in
-                  advance.
-                </p>
-              </div>
-              <div className={styles.inversionItem}>
-                <p className={styles.inversionName}>3 · Finance</p>
-                <p className={styles.inversionBody}>
-                  Finance remains at the membrane, coordinating only within
-                  ecological and doctrinal boundaries.
-                </p>
-              </div>
-            </div>
+            <p className={styles.sectionLeadDark}>
+              u-Kama reverses the default order of authority and formalizes
+              boundary behavior before market participation.
+            </p>
+          </div>
+
+          <div className={styles.membraneGrid}>
+            {membranePlates.map((item) => (
+              <article key={item.title} className={styles.membranePlate}>
+                <h3 className={styles.membraneTitle}>{item.title}</h3>
+                <p className={styles.membraneBody}>{item.body}</p>
+              </article>
+            ))}
           </div>
         </section>
 
-        <section className={styles.section}>
+        <section className={styles.lightSection}>
           <div className={styles.sectionHead}>
             <p className={styles.kicker}>Architecture Overview</p>
-            <h2 className={styles.sectionTitle}>
-              Concentric structure with a strict boundary membrane.
-            </h2>
+            <h2 className={styles.sectionTitle}>A framed systems artifact.</h2>
             <p className={styles.sectionLead}>
-              The architecture is intentionally layered so each outer function
-              depends on an inner truth layer that cannot be financially
-              overridden.
+              The architecture plate records one design law: reserve memory
+              remains non-financial at the core while participation interfaces
+              only at the boundary.
             </p>
           </div>
 
-          <div className={styles.architecturePlate}>
-            <div className={styles.plateHeader}>
-              <span>System Artifact</span>
-              <span>Revision Surface</span>
+          <figure className={styles.archArtifact}>
+            <div className={styles.archMeta}>
+              <span>Artifact Plate A-01</span>
+              <span>Concentric Authority Model</span>
               <span>Boundary Locked</span>
             </div>
-            <div className={styles.plateBody}>
+
+            <div className={styles.archFrame}>
               <Image
                 src="/images/architecture.jpg"
-                alt="u-Kama concentric architecture showing BDR core, buffer layers, membrane interface, and BIO boundary coordination"
-                width={1320}
-                height={830}
-                className={styles.architectureImage}
+                alt="u-Kama concentric architecture with ecological memory at core and financial coordination at boundary"
+                width={1536}
+                height={1024}
+                className={styles.archImage}
               />
             </div>
-            <p className={styles.plateCaption}>
-              Concentric architecture: ecological memory at the core, economic
-              coordination at the edge.
-            </p>
-          </div>
 
-          <div className={styles.tileGrid}>
-            {architectureTiles.map((tile) => (
-              <article key={tile.title} className={styles.archTile}>
-                <h3 className={styles.archTileTitle}>{tile.title}</h3>
-                <p className={styles.archTileBody}>{tile.body}</p>
-              </article>
-            ))}
-          </div>
+            <figcaption className={styles.archCaption}>
+              BDR core is non-financial and irreversible. BIO activity is constrained to membrane participation.
+            </figcaption>
+          </figure>
         </section>
 
-        <section className={styles.governanceSection}>
-          <div className={styles.sectionHeadOnDark}>
-            <p className={styles.kickerOnDark}>Governance · Witnessing · Boundary</p>
-            <h2 className={styles.sectionTitleOnDark}>
-              Distributed authority with explicit boundary logic.
-            </h2>
-            <p className={styles.sectionLeadOnDark}>
-              Governance is held as a witness structure, not a leadership brand.
-              Roles are separated so no participant can collapse doctrine,
-              verification, and execution into one center.
+        <section className={styles.darkSection}>
+          <div className={styles.sectionHeadDark}>
+            <p className={styles.kickerDark}>Governance & Witnessing</p>
+            <h2 className={styles.sectionTitleDark}>Distributed authority blocks capture risk.</h2>
+            <p className={styles.sectionLeadDark}>
+              Roles are separated so doctrine, operation, and attestation cannot
+              collapse into a single control path.
             </p>
           </div>
 
           <div className={styles.witnessGrid}>
             {witnessBlocks.map((block) => (
-              <article key={block.title} className={styles.witnessBlock}>
-                <h3 className={styles.witnessTitle}>{block.title}</h3>
-                <p className={styles.witnessBody}>{block.body}</p>
+              <article key={block.role} className={styles.witnessBlock}>
+                <h3 className={styles.witnessRole}>{block.role}</h3>
+                <p className={styles.witnessAuthority}>{block.authority}</p>
+                <p className={styles.witnessLimit}>Boundary: {block.limit}</p>
               </article>
             ))}
           </div>
 
-          <div className={styles.boundaryCard}>
-            <p className={styles.boundaryLabel}>Boundary Logic</p>
+          <div className={styles.boundaryPlate}>
+            <p className={styles.boundaryLabel}>Membrane Boundary Logic</p>
             <p className={styles.boundaryText}>
-              If witness consensus fails, state escalation is withheld. If
-              ecological continuity fails, coordination capacity contracts. If
-              doctrine is breached, the boundary closes.
+              If independent witness consensus fails, state elevation is withheld.
+              If ecological continuity fails, participation capacity contracts.
+              If doctrine is breached, boundary interfaces close.
             </p>
           </div>
         </section>
 
-        <section id="contact" className={styles.closing}>
-          <div className={styles.closingInner}>
-            <p className={styles.kicker}>Reading · Contact</p>
-            <h2 className={styles.closingTitle}>
-              Enter the full body of work.
-            </h2>
-            <p className={styles.closingBody}>
-              The canonical reading includes ecological state machines,
-              witnessing doctrine, reserve memory logic, coordination
-              instruments, and governance charters.
+        <section id="contact" className={styles.lightSection}>
+          <div className={styles.closeInner}>
+            <p className={styles.kicker}>Go Deeper</p>
+            <h2 className={styles.sectionTitle}>Enter the full canonical body.</h2>
+            <p className={styles.sectionLead}>
+              Detailed material includes state machines, witness classes,
+              reserve memory rules, coordination instruments, and governance
+              charters.
             </p>
-            <div className={styles.closingActions}>
+            <div className={styles.heroActions}>
               <Link href="/reading" className={styles.primaryAction}>
-                Open canonical reading
+                Open Reading
               </Link>
-              <a href="mailto:hello@ukama.org" className={styles.mailAction}>
+              <a href="mailto:hello@ukama.org" className={styles.secondaryAction}>
                 hello@ukama.org
               </a>
             </div>

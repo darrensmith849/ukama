@@ -1,8 +1,8 @@
 .footer {
-  border-top: var(--border-fine);
+  border-top: 1px solid rgba(129, 170, 180, 0.35);
   padding: var(--space-6) var(--space-6) var(--space-5);
   background:
-    linear-gradient(180deg, rgba(237, 230, 217, 0.8) 0%, rgba(233, 224, 209, 0.92) 100%);
+    linear-gradient(180deg, #0f1d27 0%, #0a1821 100%);
 }
 
 .inner {
@@ -18,19 +18,19 @@
   font-size: var(--text-base);
   font-weight: 500;
   letter-spacing: 0.05em;
-  color: var(--color-ink);
+  color: #e8f6f7;
 }
 
 .line {
   font-size: var(--text-xs);
-  color: var(--color-earth);
+  color: #a9c8ce;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .copyright {
   font-size: var(--text-xs);
-  color: var(--color-stone-strong);
+  color: #7aa0aa;
   letter-spacing: 0.08em;
 }
 

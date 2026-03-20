@@ -1,31 +1,30 @@
 /* ============================================
    u-Kama Design Tokens
 
-   Palette: warm mineral, ink, olive, bronze
-   Rhythm: editorial plates and architectural seams
+   Palette: twilight mineral, mist, jade, amber
    ============================================ */
 
 :root {
   /* --- Color --- */
-  --color-ground:       #f5f1e7;
-  --color-ground-deep:  #ede6d9;
-  --color-ground-dark:  #20292d;
-  --color-surface:      #f1eadc;
-  --color-stone:        #c8bca9;
-  --color-stone-strong: #7f7668;
-  --color-wood:         #7a6d5b;
-  --color-earth:        #60574b;
-  --color-ink:          #1f282b;
-  --color-ink-light:    #313c40;
-  --color-ink-soft:     #4a5251;
-  --color-accent:       #8f7650;
-  --color-accent-deep:  #6e5739;
-  --color-accent-light: #baa07a;
-  --color-olive:        #788064;
-  --color-olive-deep:   #4f5a43;
-  --color-warm:         #b39872;
-  --color-white:        #faf6ee;
-  --color-rule:         #d8cdbb;
+  --color-ground:       #edf4f6;
+  --color-ground-deep:  #dce9ed;
+  --color-ground-dark:  #0f1d27;
+  --color-surface:      #f6fbfc;
+  --color-stone:        #98b4bc;
+  --color-stone-strong: #5b7781;
+  --color-wood:         #52717b;
+  --color-earth:        #33515c;
+  --color-ink:          #102029;
+  --color-ink-light:    #26414b;
+  --color-ink-soft:     #45626d;
+  --color-accent:       #d3a45f;
+  --color-accent-deep:  #99692c;
+  --color-accent-light: #e8c58e;
+  --color-olive:        #2d968d;
+  --color-olive-deep:   #1f7269;
+  --color-warm:         #d7b076;
+  --color-white:        #fbfdfd;
+  --color-rule:         #bcd1d7;
 
   /* --- Typography Scale --- */
   --text-xs:    0.75rem;
@@ -80,6 +79,6 @@
   --border-fine:  1px solid var(--color-rule);
 
   /* --- Shadows --- */
-  --shadow-inset: inset 0 1px 3px rgba(31, 40, 43, 0.06);
-  --shadow-soft:  0 1px 4px rgba(31, 40, 43, 0.05), 0 4px 16px rgba(31, 40, 43, 0.04);
+  --shadow-inset: inset 0 1px 3px rgba(16, 32, 41, 0.07);
+  --shadow-soft:  0 2px 6px rgba(16, 32, 41, 0.06), 0 8px 24px rgba(16, 32, 41, 0.05);
 }
