@@ -102,7 +102,8 @@
 }
 
 .primaryAction,
-.secondaryAction {
+.secondaryAction,
+.contactAction {
   font-size: var(--text-sm);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -130,6 +131,17 @@
 .secondaryAction:hover {
   color: #ebf7f8;
   border-bottom-color: rgba(212, 241, 243, 0.96);
+}
+
+.contactAction {
+  color: var(--color-ink);
+  border-bottom: 1px solid rgba(16, 32, 41, 0.32);
+  padding-bottom: 0.2rem;
+}
+
+.contactAction:hover {
+  color: var(--color-accent-deep);
+  border-bottom-color: var(--color-accent-deep);
 }
 
 .lightSection,

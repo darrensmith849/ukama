@@ -229,9 +229,9 @@ export default function Home() {
               <Link href="/reading" className={styles.primaryAction}>
                 Open Reading
               </Link>
-              <a href="mailto:hello@ukama.org" className={styles.secondaryAction}>
-                hello@ukama.org
-              </a>
+              <Link href="/contact" className={styles.contactAction}>
+                Contact Page
+              </Link>
             </div>
           </div>
         </section>

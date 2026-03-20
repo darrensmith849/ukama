@@ -12,9 +12,9 @@ export default function Nav() {
           <Link href="/reading" className={styles.link}>
             Reading
           </Link>
-          <a href="#contact" className={styles.link}>
+          <Link href="/contact" className={styles.link}>
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
